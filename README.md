@@ -15,6 +15,8 @@ Consolidating the above information, FieldTrip is able to preprocess our raw dat
 ##Electrode Alignment
 This step is very important as the locations of the electrodes relative to the headmodel are pivotal to the correct calculation of the leadield and subsequent source estimation. The code provided here offers an interactive method of aligning, scaling and rotating the electodes set by our template file (in this case "biosemi.txt") in order to align them to our head model. The interactive script provided also allows for a responsive visualization of the alignment, which can then be saved as a .mat file for further use. Be sure to edit the alignment script to accurately reflect the headmodel being used and the electrode setup described by the raw data.
 
+![EEG alignment](https://raw.githubusercontent.com/MKhanGit/beamforming/master/img/alignment.png "EEG alignment")
+
 ##Headmodel Preparation
 The code for headmodel preparation is fairly straightforward assuming that you already have a compiled headmodel. Inlcluded in the script is a comment for how to scale the headmodel, which is useful if the units for the electrode template and the headmodel are different. If you need to create your own headmodel, FieldTrip offers comprehensive documentation for the creation of BEM and FEM headmodels:
 
@@ -22,8 +24,6 @@ The code for headmodel preparation is fairly straightforward assuming that you a
 	http://www.fieldtriptoolbox.org/tutorial/headmodel_eeg_bem
 	http://www.fieldtriptoolbox.org/tutorial/headmodel_eeg_fem
 ```
-![EEG alignment](https://raw.githubusercontent.com/MKhanGit/beamforming/master/img/alignment.png "EEG alignment")
-
 
 ##Leadfield Calculation
 Arguably the most important step in the analysis process, the leadfield consolidates the electrode template and headmodel in order to  define the matrix used for sourcespace in the inverse solution. This script produces a variable "[grid]" which defines the sourcespace leadfield matrix, used to estimate dipole source locations when related back to the temporal covariance matrix given by inverse Fourier transform of a time-frequency series vector.
