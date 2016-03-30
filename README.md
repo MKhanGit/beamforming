@@ -10,7 +10,7 @@ Make note of the "biosemi.txt" electrode template being used, which is a custom 
 ```
 If you wish to verify this info or generate your own electrode positions, the above link offers an interactive Excel file which will calculate azimuth values based on head circumference (this is useful depending on the headmodel you choose to use).
 
-Consolidating the above information, FieldTrip is able to preprocess our raw data into several coherent trials of interest. 
+Consolidating the above information, FieldTrip is able to preprocess our raw data into several trials of interest, making analysis in the next sections more organized. 
 
 ##Electrode Alignment
 
