@@ -42,3 +42,4 @@ Conveniently, FieldTrip offers a built-in source analysis function (ft_sourceana
   and the anatomical volume that can be visualized using FT_SOURCEPLOT or written to
   file using FT_SOURCEWRITE.
 ```
+![Source estimation](https://raw.githubusercontent.com/MKhanGit/beamforming/master/beamforming_MEG_example/source_nerual_activity_index.png "Source estimation")
