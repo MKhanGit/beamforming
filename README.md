@@ -13,6 +13,7 @@ If you wish to verify this info or generate your own electrode positions, the ab
 Consolidating the above information, FieldTrip is able to preprocess our raw data into several trials of interest, making analysis in the next sections more organized. 
 
 ##Electrode Alignment
+This step is important as the locations of the electrodes relative to the headmodel are pivotal to the correct calculation of the leadield and subsequent source estimation.
 
 ##Headmodel Preparation
 
