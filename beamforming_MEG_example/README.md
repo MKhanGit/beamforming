@@ -7,4 +7,6 @@ This MATLAB script (beamforming_test.m) takes a set of MEG data and analyzes sou
 ## Required Data:
 The data for which this script was written in mind (MEG data) can be found at the following ftp server, courtesy of the FieldTrip team:
 
-```ftp://ftp.fieldtriptoolbox.org/pub/fieldtrip/tutorial/Subject01/```
+```
+	ftp://ftp.fieldtriptoolbox.org/pub/fieldtrip/tutorial/Subject01/
+```
