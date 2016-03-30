@@ -22,6 +22,8 @@ The code for headmodel preparation is fairly straightforward assuming that you a
 	http://www.fieldtriptoolbox.org/tutorial/headmodel_eeg_bem
 	http://www.fieldtriptoolbox.org/tutorial/headmodel_eeg_fem
 ```
+![EEG alignment](https://raw.githubusercontent.com/MKhanGit/beamforming/master/img/alignment.png "EEG alignment")
+
 
 ##Leadfield Calculation
 Arguably the most important step in the analysis process, the leadfield consolidates the electrode template and headmodel in order to  define the matrix used for sourcespace in the inverse solution. This script produces a variable "[grid]" which defines the sourcespace leadfield matrix, used to estimate dipole source locations when related back to the temporal covariance matrix given by inverse Fourier transform of a time-frequency series vector.
